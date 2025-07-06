@@ -9,7 +9,7 @@ export default function Hero() {
        <div className=" grid md:grid-cols-2 items-center gap-8 max-w-5xl max-md:max-w-md mx-auto ">
   <div className="max-md:order-1 max-md:text-center">
     <h2 className="md:text-4xl text-3xl md:leading-10 font-bold text-white mb-4">
-     Welcome to My <span className='text-black'>\Portfolio Website.</span>
+     Welcome to My <span className='text-black'>Portfolio Website.</span>
     </h2>
     <p className="mt-4 text-base text-slate-600 leading-relaxed">
      Hello I&apos;m Ahmed Malik And I am a Full Stack Developer. I have a passion for creating dynamic and responsive web applications that provide an exceptional user experience. With expertise in both front-end and sanity cms i used back-end technologies, I strive to build efficient and scalable solutions that meet the needs of users and businesses alike. & become the Professional Developer.
