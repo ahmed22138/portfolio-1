@@ -1,6 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import { X, Menu } from 'lucide-react';
+import Img from 'next/image';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +11,7 @@ const Navbar: React.FC = () => {
     // { name: 'Team', href: '#' },
     // { name: 'Feature', href: '#' },
     { name: 'Skill', href: 'skill' },
-    { name: 'About', href: '#' },
+    // { name: 'About', href: '#' },
     { name: 'Contact', href: 'contact' },
   ];
 
@@ -19,16 +20,20 @@ const Navbar: React.FC = () => {
       <div className="flex flex-wrap items-center justify-between gap-5 w-full">
         {/* LOGO */}
         <a href="#" className="max-sm:hidden">
-          <img
-            src="./images/images.png"
+          <Img
+            src="/images/images.png"
             alt="logo"
+            width={100}
+            height={100}
             className="w-20 rounded-b-full max-sm:w-16 max-lg:w-20 max-md:w-20 max-sm:ml-2 max-sm:mt-1 max-lg:mt-0 max-md:mt-0"
           />
         </a>
         <a href="#" className="hidden max-sm:block">
-          <img
-            src="./images/images.png"
+          <Img
+            src="/images/images.png"
             alt="logo"
+            width={100}
+            height={100}
             className="w-20 rounded-b-full max-sm:w-16 max-lg:w-20 max-md:w-20 max-sm:ml-2 max-sm:mt-1 max-lg:mt-0 max-md:mt-0"
           />
         </a>
