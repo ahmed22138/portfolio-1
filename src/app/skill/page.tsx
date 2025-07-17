@@ -29,35 +29,34 @@ export default function Skill() {
 
   return (
     <>
-    <div className='grid grid-cols-3 flex flex-nowrap mt-48  justify-center items-center '>
-      {data.map((item) =>(
-        <div key={item.slug.current}>
-          <div className='max-w-[400px]  mx-auto p-4 bg-black shadow-md rounded-b-4xl mb-6 '>
-          {item.image && (
-            <Image
-              src={urlFor(item.image).url()}
-              alt={item.title}
-              width={500}
-              height={300}
-              className="mb-4"
-            />
-          )}
-           <h2 className="text-2xl font-bold mb-4 text-gray-300 ">{item.title}</h2>
-          <p className="text-white mb-4">{item.content}</p>
-          <a href={`/skill/${item.slug.current}`} className="text-blue-500 hover:underline">
-            Read more
-          </a>
 
-</div>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-24 px-4">
+  {data.map((item) => (
+    <div key={item.slug.current}>
+      <div className="max-w-[400px] mx-auto p-4 bg-black shadow-md rounded-b-4xl mb-6">
+        {item.image && (
+          <Image
+            src={urlFor(item.image).url()}
+            alt={item.title}
+            width={500}
+            height={300}
+            className="mb-4 rounded-lg object-cover"
+          />
+        )}
+        <h2 className="text-2xl font-bold mb-4 text-gray-300">{item.title}</h2>
+        <p className="text-white mb-4">{item.content}</p>
+        <a
+          href={`/skill/${item.slug.current}`}
+          className="text-blue-500 hover:underline"
+        >
+          Read more
+        </a>
       </div>
-
-        ))}
-
-
-      
+    </div>
+  ))}
 </div>
 
-    
+
     </>
   );
 }
